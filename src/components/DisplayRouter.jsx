@@ -5,7 +5,7 @@ import { Album } from "./Album";
 
 export function DisplayRouter() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 h-auto">
       <Header />
 
       <Routes>

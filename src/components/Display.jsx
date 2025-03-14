@@ -7,14 +7,12 @@ export function Display() {
 
   const albumImage = albums[id];
 
-  console.log(albumImage)
-
   return (
     <div>
 
       <h1 className="text-2xl font-semibold mb-4">Display</h1>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-col lg:flex-row">
 
         <img src={albumImage.img} alt={albumImage.name} className="rounded-2xl w-100" />
 

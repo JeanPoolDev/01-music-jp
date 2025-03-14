@@ -6,7 +6,7 @@ export function Album() {
     <div>
       <h1 className="text-xl font-semibold mb-4">Recently Played</h1>
 
-      <div className="flex gap-4">
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
         {
           albums.map(album => (
             <Link

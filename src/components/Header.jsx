@@ -1,9 +1,10 @@
 export function Header() {
   return (
     <header className="flex justify-between">
+
       <input
         type="text"
-        className="p-2 bg-[#dddcec] rounded-xl w-[300px]"
+        className="p-2 bg-[#dddcec] rounded-xl w-[300px] hidden lg:flex"
         placeholder="Search"
       />
 

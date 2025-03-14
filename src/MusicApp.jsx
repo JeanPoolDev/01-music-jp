@@ -9,15 +9,15 @@ export function MusicApp() {
 
         <div className="flex h-[80%]">
 
-          <div className=" w-1/6 px-4 py-6 overflow-y-auto">
+          <div className=" w-1/6 px-4 py-6 overflow-y-auto hidden lg:flex">
             <Sidebar />
           </div>
 
-          <div className=" w-4/6 bg-[#e7e8f1] px-8 py-6 rounded-4xl overflow-y-auto">
+          <div className=" w-full lg:w-4/6 bg-[#e7e8f1] px-8 py-6 rounded-4xl overflow-y-auto">
             <DisplayRouter />
           </div>
 
-          <div className=" w-1/6 px-4 py-6 overflow-y-auto">
+          <div className=" w-1/6 px-4 py-6 overflow-y-auto hidden lg:flex">
             <Friends />
           </div>
 
