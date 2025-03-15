@@ -2,7 +2,7 @@ import { friends } from "../data";
 
 export function Friends() {
   return (
-    <div>
+    <div className="w-full">
       <h1 className="font-semibold text-xl mb-4" >Friends Activity</h1>
 
       <div className="mb-4">

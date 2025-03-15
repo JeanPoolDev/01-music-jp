@@ -10,7 +10,7 @@ export function DisplayRouter() {
 
       <Routes>
         <Route path="/album/:id" element={<Display />} />
-        <Route path="/*" element={<Navigate to={'/album/0'} />} />
+        <Route path="/*" element={<Navigate to={'/'} />} />
       </Routes>
 
       <Album />
