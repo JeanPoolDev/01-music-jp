@@ -1,11 +1,12 @@
 import { useParams } from "react-router";
 import { albums, songs } from "../data";
+import { useMusic } from "../hook/useMusic";
 
 export function Display() {
 
   const { id } = useParams();
-
   const albumImage = albums[id];
+  const { handlePlayTrackById } = useMusic();
 
   return (
     <div>
@@ -17,11 +18,11 @@ export function Display() {
         <img src={albumImage.img} alt={albumImage.name} className="rounded-2xl w-100" />
 
         <div className="w-full h-100 overflow-y-auto">
-
           {
             songs.map(song => (
               <div
                 key={song.id}
+                onClick={() => handlePlayTrackById(song.id)}
                 className="flex items-center justify-between py-2 px-5 
               hover:bg-[#dddcec] rounded-lg cursor-pointer">
                 <div>
@@ -33,10 +34,6 @@ export function Display() {
               </div>
             ))
           }
-
-
-
-
         </div>
 
       </div>

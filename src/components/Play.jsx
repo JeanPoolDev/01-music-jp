@@ -1,9 +1,11 @@
-import { songs } from "../data";
-import { Heart, Next, Pause, Playing, Previous, Volumen, } from "../icons";
+import { useMusic } from "../hook/useMusic";
+import { Heart, Next, Pause, Playing, Previous, Volumen } from "../icons";
 
 export function Play() {
 
-  const { name, artist, img } = songs[0];
+  const { status, handlePlay, handlePause, volumen,
+    handleVolumeChange, track, handleNextTrack,
+    handlePreviousTrack } = useMusic();
 
   return (
     <div className="bg-[#e7e8f1] h-full rounded-2xl w-full">
@@ -13,25 +15,33 @@ export function Play() {
       <section className="flex flex-col md:flex-row md:justify-between items-center justify-evenly h-full px-4 md:px-10">
 
         <div className="hidden md:flex gap-4 items-center">
-          <img src={img} alt={name} className="w-20 h-20 rounded-2xl" />
+          <img src={track.img} alt={track.name} className="w-20 h-20 rounded-2xl" />
           <div>
-            <h1 className="font-semibold">{name}</h1>
-            <p className="text-sm font-light">{artist}</p>
+            <h1 className="font-semibold">{track.name}</h1>
+            <p className="text-sm font-light">{track.artist}</p>
           </div>
         </div>
 
         <div className="flex gap-4 items-center">
-          <button> <Previous /> </button>
-          {/* <button> <Pause /> </button> */}
-          <button> <Playing /> </button>
-          <button> <Next /> </button>
+          <button onClick={handlePreviousTrack} className="cursor-pointer"> <Previous /> </button>
+          {
+            status
+              ? <button onClick={handlePause} className="cursor-pointer" > <Pause /> </button>
+              : <button onClick={handlePlay} className="cursor-pointer"> <Playing /> </button>
+          }
+          <button onClick={handleNextTrack} className="cursor-pointer"> <Next /> </button>
         </div>
 
         <div className="flex gap-4 items-center">
           <Volumen />
 
           <input
-            type="range" />
+            type="range"
+            value={volumen}
+            onChange={handleVolumeChange}
+            min={0}
+            max={10}
+          />
 
           <Heart />
 

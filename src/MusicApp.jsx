@@ -2,8 +2,12 @@ import { DisplayRouter } from "./components/DisplayRouter";
 import { Friends } from "./components/Friends";
 import { Play } from "./components/Play";
 import { Sidebar } from "./components/Sidebar";
+import { useMusic } from "./hook/useMusic";
 
 export function MusicApp() {
+
+  const { audioRef, track } = useMusic();
+
   return (
     <div className="h-screen bg-[#cccee3] p-2 md:p-10">
       <div className="h-full bg-[#dddcec] rounded-4xl p-4">
@@ -28,6 +32,8 @@ export function MusicApp() {
         <div className="h-[20%] px-4 py-6">
           <Play />
         </div>
+
+        <audio src={track.file} ref={audioRef} preload="auto"></audio>
 
       </div>
     </div>
