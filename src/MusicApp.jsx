@@ -29,7 +29,7 @@ export function MusicApp() {
 
         </div>
 
-        <div className="h-[20%] px-4 py-6">
+        <div className="h-[20%] py-4 px-2 md:px-4 md:py-6">
           <Play />
         </div>
 

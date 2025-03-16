@@ -53,17 +53,41 @@ export const songs = [
     img: 'https://i.pinimg.com/736x/05/4f/10/054f10a8edf99cb26c3a9563eb9af4d1.jpg',
     file: '/song3.mp3'
   },
-  { id: 3, name: 'La Canción', artist: 'J Balvin ft. Bad Bunny', genre: 'Reguetón', duration: '4:02', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' },
-  { id: 4, name: 'Hawái', artist: 'Maluma', genre: 'Reguetón', duration: '3:19', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' },
-  { id: 5, name: 'Blinding Lights', artist: 'The Weeknd', genre: 'Pop', duration: '3:20', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' },
-  { id: 6, name: 'Watermelon Sugar', artist: 'Harry Styles', genre: 'Pop', duration: '2:54', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' },
-  { id: 7, name: 'Levitating', artist: 'Dua Lipa ft. DaBaby', genre: 'Pop', duration: '3:23', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' },
-  { id: 8, name: 'Peaches', artist: 'Justin Bieber ft. Daniel Caesar, Giveon', genre: 'Pop', duration: '3:18', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' },
-  { id: 9, name: 'Good 4 U', artist: 'Olivia Rodrigo', genre: 'Pop', duration: '2:58', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg' }
+  { id: 3, name: 'La Canción', artist: 'J Balvin ft. Bad Bunny', genre: 'Reguetón', duration: '4:02', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song1.mp3' },
+  { id: 4, name: 'Hawái', artist: 'Maluma', genre: 'Reguetón', duration: '3:19', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song2.mp3' },
+  { id: 5, name: 'Blinding Lights', artist: 'The Weeknd', genre: 'Pop', duration: '3:20', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song3.mp3' },
+  { id: 6, name: 'Watermelon Sugar', artist: 'Harry Styles', genre: 'Pop', duration: '2:54', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song1.mp3' },
+  { id: 7, name: 'Levitating', artist: 'Dua Lipa ft. DaBaby', genre: 'Pop', duration: '3:23', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song2.mp3' },
+  { id: 8, name: 'Peaches', artist: 'Justin Bieber ft. Daniel Caesar, Giveon', genre: 'Pop', duration: '3:18', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song3.mp3' },
+  { id: 9, name: 'Good 4 U', artist: 'Olivia Rodrigo', genre: 'Pop', duration: '2:58', img: 'https://i.pinimg.com/736x/22/ca/03/22ca03ec82583f806a7d645d77789b16.jpg', file: '/song1.mp3' }
 ];
 
-
-
+export const sidebarItems = [
+  {
+    id: 0,
+    name: 'Regueton',
+    link: '/album/0',
+    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjYzdiMWVmIiBkPSJNMTIuNSAxNXExLjA1IDAgMS43NzUtLjcyNVQxNSAxMi41VjdoM1Y1aC00djUuNXEtLjMyNS0uMjUtLjctLjM3NVQxMi41IDEwcS0xLjA1IDAtMS43NzUuNzI1VDEwIDEyLjV0LjcyNSAxLjc3NVQxMi41IDE1TTggMThxLS44MjUgMC0xLjQxMi0uNTg3VDYgMTZWNHEwLS44MjUuNTg4LTEuNDEyVDggMmgxMnEuODI1IDAgMS40MTMuNTg4VDIyIDR2MTJxMCAuODI1LS41ODcgMS40MTNUMjAgMTh6bTAtMmgxMlY0SDh6bS00IDZxLS44MjUgMC0xLjQxMi0uNTg3VDIgMjBWNmgydjE0aDE0djJ6TTggNHYxMnoiLz48L3N2Zz4=',
+  },
+  {
+    id: 0,
+    name: 'Pop',
+    link: '/album/3',
+    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjYzdiMWVmIiBkPSJNMTIuNSAxNXExLjA1IDAgMS43NzUtLjcyNVQxNSAxMi41VjdoM1Y1aC00djUuNXEtLjMyNS0uMjUtLjctLjM3NVQxMi41IDEwcS0xLjA1IDAtMS43NzUuNzI1VDEwIDEyLjV0LjcyNSAxLjc3NVQxMi41IDE1TTggMThxLS44MjUgMC0xLjQxMi0uNTg3VDYgMTZWNHEwLS44MjUuNTg4LTEuNDEyVDggMmgxMnEuODI1IDAgMS40MTMuNTg4VDIyIDR2MTJxMCAuODI1LS41ODcgMS40MTNUMjAgMTh6bTAtMmgxMlY0SDh6bS00IDZxLS44MjUgMC0xLjQxMi0uNTg3VDIgMjBWNmgydjE0aDE0djJ6TTggNHYxMnoiLz48L3N2Zz4=',
+  },
+  {
+    id: 0,
+    name: 'Salsa',
+    link: '/album/2',
+    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjYzdiMWVmIiBkPSJNMTIuNSAxNXExLjA1IDAgMS43NzUtLjcyNVQxNSAxMi41VjdoM1Y1aC00djUuNXEtLjMyNS0uMjUtLjctLjM3NVQxMi41IDEwcS0xLjA1IDAtMS43NzUuNzI1VDEwIDEyLjV0LjcyNSAxLjc3NVQxMi41IDE1TTggMThxLS44MjUgMC0xLjQxMi0uNTg3VDYgMTZWNHEwLS44MjUuNTg4LTEuNDEyVDggMmgxMnEuODI1IDAgMS40MTMuNTg4VDIyIDR2MTJxMCAuODI1LS41ODcgMS40MTNUMjAgMTh6bTAtMmgxMlY0SDh6bS00IDZxLS44MjUgMC0xLjQxMi0uNTg3VDIgMjBWNmgydjE0aDE0djJ6TTggNHYxMnoiLz48L3N2Zz4=',
+  },
+  {
+    id: 0,
+    name: 'Huaynito',
+    link: '/album/1',
+    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjYzdiMWVmIiBkPSJNMTIuNSAxNXExLjA1IDAgMS43NzUtLjcyNVQxNSAxMi41VjdoM1Y1aC00djUuNXEtLjMyNS0uMjUtLjctLjM3NVQxMi41IDEwcS0xLjA1IDAtMS43NzUuNzI1VDEwIDEyLjV0LjcyNSAxLjc3NVQxMi41IDE1TTggMThxLS44MjUgMC0xLjQxMi0uNTg3VDYgMTZWNHEwLS44MjUuNTg4LTEuNDEyVDggMmgxMnEuODI1IDAgMS40MTMuNTg4VDIyIDR2MTJxMCAuODI1LS41ODcgMS40MTNUMjAgMTh6bTAtMmgxMlY0SDh6bS00IDZxLS44MjUgMC0xLjQxMi0uNTg3VDIgMjBWNmgydjE0aDE0djJ6TTggNHYxMnoiLz48L3N2Zz4=',
+  },
+]
 
 
 

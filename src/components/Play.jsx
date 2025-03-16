@@ -5,14 +5,19 @@ export function Play() {
 
   const { status, handlePlay, handlePause, volumen,
     handleVolumeChange, track, handleNextTrack,
-    handlePreviousTrack } = useMusic();
+    handlePreviousTrack, bgRef, barRef, handleSeekSong } = useMusic();
 
   return (
     <div className="bg-[#e7e8f1] h-full rounded-2xl w-full">
 
-      <hr className="h-2 bg-[#c7b1ef] border-none rounded-2xl w-[20%] cursor-pointer" />
+      <div ref={bgRef} onClick={handleSeekSong}
+        className="w-full cursor-pointer" >
+        <hr ref={barRef} className="h-2 bg-[#c7b1ef] border-none rounded-2xl w-0 " />
+      </div>
 
-      <section className="flex flex-col md:flex-row md:justify-between items-center justify-evenly h-full px-4 md:px-10">
+
+      <section className="flex flex-col md:flex-row md:justify-between items-center
+      justify-evenly h-full px-4 md:px-10">
 
         <div className="hidden md:flex gap-4 items-center">
           <img src={track.img} alt={track.name} className="w-20 h-20 rounded-2xl" />
